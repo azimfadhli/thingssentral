@@ -14,10 +14,6 @@ void connectwifi();
 
 void setup() {
   Serial.begin(115200);
-
-  // set the user Id for things sentral
-  TS.userid = "0069101";
-
   connectwifi();
 }
 

@@ -15,7 +15,6 @@
 
 class thingssentral {
 public:
-  String userid = "0069101";
 
   /*--------------------------------------------------*/
   /*---------------- GET DATA FROM TS ----------------*/
@@ -28,8 +27,8 @@ public:
   String ICACHE_RAM_ATTR readNode(String __NodeID, bool _repeat = false) {
     HTTPClient http;
     //WiFiClient client;
-    String completedLink = String("http://thingssentral.io/ReadNode?Params=tokenid|")
-                           + userid + "@NodeId|" + __NodeID;
+    String completedLink = String("http://thingssentral.io/ReadNode?Params=tokenid|@NodeId|")
+                            + __NodeID;
 
     http.begin(completedLink);
     http.GET();
@@ -71,7 +70,7 @@ public:
                                   String _NodeID3 = "", String _Data3 = "",  //OPTIONAL PARAM
                                   String _NodeID4 = "", String _Data4 = "")  //OPTIONAL PARAM
   {
-    String completedLink = String("http://thingssentral.io/postlong?data=userid|") + userid;
+    String completedLink = String("http://thingssentral.io/postlong?data=userid|");
     completedLink.concat(String("@") + _NodeID1 + "|" + String(_Data1));
     if (_NodeID2 != "") completedLink.concat(String("@") + _NodeID2 + "|" + String(_Data2));
     if (_NodeID3 != "") completedLink.concat(String("@") + _NodeID3 + "|" + String(_Data3));
