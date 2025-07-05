@@ -1,8 +1,9 @@
 # Thingssentral Library for ESP Devices
 
-![ESP8266 and ESP32](https://img.shields.io/badge/Platform-ESP8266%2FESP32-blue)
+![ESP32 and ESP8266 Compatible](https://img.shields.io/badge/ESP32%20%26%20ESP8266-Compatible-brightgreen)
+![MIT License](https://img.shields.io/badge/License-MIT-blue)
 
-A lightweight library for ESP8266 and ESP32 devices to interact with Thingsentral servers. Easily read data from and send data to your Thingsentral server with support for up to 4 nodes per request.
+A lightweight library for ESP8266 and ESP32 devices to interact with Thingsentral servers. Easily read data from and send data to Thingsentral server with support for up to 4 nodes per request.
 
 ## Features
 
