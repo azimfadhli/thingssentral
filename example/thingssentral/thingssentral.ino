@@ -1,4 +1,4 @@
-#include "thingssentral.h"
+#include <thingssentral.h>
 
 String ssid = "MyThingsSentral";
 String pass = "12345678";
